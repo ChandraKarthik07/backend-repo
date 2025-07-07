@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: webhook-backend
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: python app.py
+    pythonVersion: 3.11.8
+    envVars:
+      - key: MONGO_URI
+        value: mongodb+srv://chandrakarthik42:Karthik%40421@clustertech.u3z8all.mongodb.net/?retryWrites=true&w=majority&appName=clustertech
+      - key: MONGO_DB_NAME
+        value: techstax
